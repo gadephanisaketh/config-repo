@@ -1,0 +1,6 @@
+spring:
+  profiles: prod
+  datasource:
+    url: jdbc:mysql://prod-db-server/mydb
+    username: produser
+    password: prodpass

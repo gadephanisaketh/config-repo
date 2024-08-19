@@ -1,0 +1,6 @@
+spring:
+  profiles: dev
+  datasource:
+    url: jdbc:h2:mem:devdb
+    username: devuser
+    password: devpass
