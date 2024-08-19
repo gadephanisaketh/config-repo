@@ -1,6 +1,8 @@
 spring:
   profiles: prod
-  datasource:
-    url: jdbc:mysql://prod-db-server/mydb
-    username: produser
-    password: prodpass
+  # Add any production-specific configurations here
+  server:
+    port: 80  # Example: set the server port
+  logging:
+    level:
+      root: INFO  # Example: set the logging level to INFO for production
