@@ -1,22 +1,8 @@
-spring.application.name=config-repo
-# Set the server port (optional, default is 8888)
-server.port=8888
-
-# Configure the Git repository from which the Config Server will fetch configuration files
-spring.cloud.config.server.git.uri=https://github.com/your-username/your-config-repo
-clone-on-start: true
-
-
-
-spring.cloud.config.server.git.username=gadephani.saketh@girmiti.com
-spring.cloud.config.server.git.password=MVPCO@048s
-spring.cloud.config.server.git.searchPaths=config-repo
-
-# Enable the Config Server functionality
-spring.cloud.config.server.git.clone-on-start=true
-spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce
-spring.datasource.username=root
-spring.datasource.password=Girmiti@01
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-
-
+spring:
+  profiles: dev
+  # Add any development-specific configurations here
+  server:
+    port: 8080  # Example: set the server port
+  logging:
+    level:
+      root: DEBUG  # Example: set the logging level to DEBUG for development
