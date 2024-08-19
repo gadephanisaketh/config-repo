@@ -1,5 +1,12 @@
+server:
+  port: 8888
+
+
+          
 spring:
-  application:
-    name: config-server
-  profiles:
-    active: default
+ datasource:
+  url: jdbc:mysql://localhost:3306/ecommerce
+  username: root
+  password: Girmiti@01
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  uri: https://github.com/your-username/your-config-repo.git
